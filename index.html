@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Melaka River</title>
     <meta name="description" content="Melaka River is my home">
@@ -12,27 +13,73 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <script src="assets/js/aframe.min.js"></script>
+</head>
 
-  </head>
+<body>
+<!-- Top navigation bar-->
+<nav class="navbar navbar-light navbar-expand-md">
+  <div class="container-fluid"><a class="navbar-brand" href="#"><strong>Malacca River</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <div
+        class="collapse navbar-collapse" id="navcol-1">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#">News</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contact Us</a></li>
+            <li class="nav-item" role="presentation"></li>
+        </ul>
+  </div>
+  </div>
+</nav>
 
-  <body>
-    <div id="a1-embedded">
+<!-- Jumbotron -->
+<div id="banner">
+  <div class="jumbotron" id="jumbotron">
+      <h1 style="text-align: center;padding: 40px;border-radius: 10px;">Malacca River My Home</h1>
+      <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+      <p><a class="btn btn-primary" role="button">Learn more</a></p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <br>
       <a-scene embedded>
-        <a-sky src="https://cdn.glitch.com/8e9ec9d2-1e29-437e-ac1f-828fcfe6c0d5%2F8hw0clw-360-panorama-miami.jpeg?v=1590574336424" rotation="0 -130 0"></a-sky>
+          <a-sky src="img/360_melaka1.jpg" rotation="0 -130 0"></a-sky>
+
+          <a-text font="kelsonsans" value="Beach in Miami" width="6" position="-2.5 0.25 -1.5"
+                  rotation="0 15 0"></a-text>
+      </a-scene>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <br>
+      <a-scene embedded>
+        <a-sky src="img/360_melaka2.jpg" rotation="0 -130 0"></a-sky>
 
         <a-text font="kelsonsans" value="Beach in Miami" width="6" position="-2.5 0.25 -1.5"
                 rotation="0 15 0"></a-text>
       </a-scene>
     </div>
+  </div>
 
-    <div id="a2-embedded">
+  <div class="row">
+    <div class="col-md-12">
+      <br>
       <a-scene embedded>
-        <a-sky src="https://cdn.glitch.com/8e9ec9d2-1e29-437e-ac1f-828fcfe6c0d5%2F8hw0clw-360-panorama-miami.jpeg?v=1590574336424" rotation="0 -130 0"></a-sky>
+        <a-sky src="img/360_melaka3.jpg" rotation="0 -130 0"></a-sky>
 
         <a-text font="kelsonsans" value="Beach in Miami" width="6" position="-2.5 0.25 -1.5"
                 rotation="0 15 0"></a-text>
       </a-scene>
     </div>
+  </div>
 
-  </body>
+</div>
+
+</body>
 </html>
